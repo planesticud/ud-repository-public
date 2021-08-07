@@ -30,7 +30,7 @@
     "express": "^4.17.1",
     "http-status-codes": "^2.1.2",
     "jsonschema": "^1.2.6",
-    "knex": "^0.21.5",
+    "knex": "^0.21.05",
     "log4js": "^6.3.0",
     "morgan": "^1.10.0",
     "pg": "^8.3.2",

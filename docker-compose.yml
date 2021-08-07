@@ -1,0 +1,19 @@
+version: '3'
+networks:
+ campus_virtual:
+
+services:
+   ud-repository-publicar:
+     build: .
+     container_name: ud-repository-publicar
+     restart: on-failure
+     env_file:
+        - .env
+     ports:
+        - "3008:3008"   
+     networks:
+        - campus_virtual          
+
+networks:
+  campus_virtual:
+    external: true
