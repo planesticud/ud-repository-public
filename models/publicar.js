@@ -2,7 +2,7 @@ const publicarSchema = {
     'id': '/publicarSchema',
     'type': 'object',
     'properties': {
-        'idobj': { 'type': 'int' },
+        'idobj': { 'type': 'string' },
         'revisor': { 'type': 'string' },
         'observacion': { 'type': 'string' },
         'estado': { 'type': 'string' }
@@ -14,7 +14,7 @@ const publicarSchemaUpdate = {
     'id': '/publicarSchema',
     'type': 'object',
     'properties': {
-        'idobj': { 'type': 'int' },
+        'idobj': { 'type': 'string' },
         'revisor': { 'type': 'string' },
         'observacion': { 'type': 'string' },
         'estado': { 'type': 'string' }
