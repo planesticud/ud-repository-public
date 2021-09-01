@@ -27,10 +27,9 @@ publicarController.createPublicar = async (req, res) => {
     log.error(`createPublicar invalid body `)
     res.status(BAD_REQUEST).json({ error: errors })
   } else {
-    dbQueries.insert('publicar', body)
-    res.sendStatus(CREATED)
+    const newItem = await dbQueries.insert('publicar', body)
+    res.status(201).json(newItem)
   }
-
 }
 
 publicarController.deletePublicar = async (req, res) => {
