@@ -28,6 +28,7 @@ publicarController.createPublicar = async (req, res) => {
     res.status(BAD_REQUEST).json({ error: errors })
   } else {
     const newItem = await dbQueries.insert('publicar', body)
+    log.info(`revision created with id=${newItem[0].id}`);
     res.status(201).json(newItem)
   }
 }
