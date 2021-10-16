@@ -1,5 +1,5 @@
-const publicarController = require ('./publicarController')
+const stadisticsController = require ('./stadisticsController')
 
 module.exports = {
-    publicarController
+    stadisticsController
 }

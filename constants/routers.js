@@ -1,6 +1,6 @@
-const PUBLICAR = '/publicar'
+const STADISTICS = '/stadistics'
 const HEALTH = '/health'
 module.exports = {
-    PUBLICAR,
+    STADISTICS,
     HEALTH
 }

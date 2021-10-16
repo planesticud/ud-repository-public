@@ -1,5 +1,5 @@
-const publicar = require('./publicar')
+const stadistics = require('./stadistics')
 
 module.exports = {
-    publicar
+    stadistics
 }

@@ -4,23 +4,23 @@ const { OK } = require('http-status-codes')
 const wrap = require('../wrap.js')
 const { routers } = require('../constants')
 
-const { publicarController } = require('../controllers')
+const { stadisticsController } = require('../controllers')
 
 const router = express.Router()
 
-router.get(routers.PUBLICAR, wrap(publicarController.listPublicar))
+router.get(routers.STADISTICS, wrap(stadisticsController.listStadistics))
 
-router.post(routers.PUBLICAR, wrap(publicarController.createPublicar))
+router.post(routers.STADISTICS, wrap(stadisticsController.addStadistics))
 
-router.put(routers.PUBLICAR, wrap(publicarController.updatePublicar))
+router.put(routers.STADISTICS, wrap(stadisticsController.updateStadistics))
 
-router.delete(routers.PUBLICAR, wrap(publicarController.deletePublicar))
+router.delete(routers.STADISTICS, wrap(stadisticsController.deleteStadistics))
 
 router.get(routers.HEALTH, wrap(async (req, res) => {
     res.status(OK).json({ message: 'OK' })
   }))
-  router.get("/test_publicar_ci", wrap(async (req, res) => {
-    res.status(OK).json({ message: 'THis a test for publicar ci' })
+  router.get("/test_stadistics_ci", wrap(async (req, res) => {
+    res.status(OK).json({ message: 'THis a test for stadistics ci' })
   }))
 
 module.exports = router

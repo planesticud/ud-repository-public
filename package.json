@@ -1,5 +1,5 @@
 {
-  "name": "ud-repository-public",
+  "name": "ud-repository-stadistics",
   "version": "1.0.0",
   "description": "repositorio de publicación de recursos",
   "main": "index.js",
@@ -10,20 +10,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/narcosm/ud-repository-public.git"
+    "url": "git+https://github.com/JOSEDAVIDR/ud-repository-stadistics.git"
   },
   "keywords": [
     "planestic",
     "repository",
     "nodejs",
-    "publicar"
+    "stadistics"
   ],
-  "author": "noe arcos",
+  "author": "Jose David Rodriguez",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/narcosm/ud-repository-public/issues"
+    "url": "https://github.com/JOSEDAVIDR/ud-repository-stadistics/issues"
   },
-  "homepage": "https://github.com/narcosm/ud-repository-public#readme",
+  "homepage": "https://github.com/JOSEDAVIDR/ud-repository-stadistics#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",

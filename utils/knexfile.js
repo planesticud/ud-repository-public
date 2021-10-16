@@ -6,28 +6,28 @@ const {
 } = process.env
 
 module.exports = {
-    development: {
-        client: 'postgresql',
-        connection: {
-          host: DB_HOST || 'postgres',
-          database: DB_NAME || 'publicar',
-          user:     DB_USER || 'postgres',
-          password: DB_PASSWORD || 'changeme'
-      },
-      pool: {
-        min: 2,
-        max: 10
-      },
-      migrations: {
-        directory: '../migrations',
-        tableName: 'knex_migrations'
-      }
+  development: {
+    client: 'postgresql',
+    connection: {
+      host: DB_HOST || 'postgres',
+      database: DB_NAME || 'stadistics',
+      user: DB_USER || 'postgres',
+      password: DB_PASSWORD || 'changeme'
     },
+    pool: {
+      min: 2,
+      max: 10
+    },
+    migrations: {
+      directory: '../migrations',
+      tableName: 'knex_migrations'
+    }
+  },
   staging: {
     client: 'postgresql',
     connection: {
       database: 'my_db',
-      user:     'username',
+      user: 'username',
       password: 'password'
     },
     pool: {
@@ -43,7 +43,7 @@ module.exports = {
     client: 'postgresql',
     connection: {
       database: 'my_db',
-      user:     'username',
+      user: 'username',
       password: 'password'
     },
     pool: {
