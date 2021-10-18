@@ -8,6 +8,19 @@ const dbQueries = require('../utils/dbQueries')
 const publicarController = module.exports
 const log = logger.getLogger('publicarController')
 
+
+publicarController.contarPublicar = async (req, res) => {
+
+  let where = req.query
+  if (Object.keys(where).length === 0) {
+    where = {}
+  }
+  log.info(`contarPublicar ${JSON.stringify(where)} `)
+  const publicar = (await (dbQueries.select('publicar', where))).length
+ // console.log("conteo: "+publicar)
+  res.json(publicar)
+}
+
 publicarController.listPublicar = async (req, res) => {
 
   let where = req.query

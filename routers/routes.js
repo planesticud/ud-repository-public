@@ -8,6 +8,8 @@ const { publicarController } = require('../controllers')
 
 const router = express.Router()
 
+router.get(routers.PUBLICAR+"/contar", wrap(publicarController.contarPublicar))
+
 router.get(routers.PUBLICAR, wrap(publicarController.listPublicar))
 
 router.post(routers.PUBLICAR, wrap(publicarController.createPublicar))
